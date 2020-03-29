@@ -1,5 +1,5 @@
 cli:
-  image: dockersf/letsencrypt-manager:latest
+  image: neinkeinkaffee/letsencrypt-manager:latest
   environment:
     - LE_EMAIL=$EMAIL
     - LE_RSA_KEY_SIZE=4096
@@ -10,7 +10,7 @@ cli:
     - ./cli.ini:/root/.config/letsencrypt/cli.ini
 
 cron:
-  image: dockersf/letsencrypt-manager:latest
+  image: neinkeinkaffee/letsencrypt-manager:latest
   environment:
     - LE_EMAIL=$EMAIL
     - LE_RSA_KEY_SIZE=4096
